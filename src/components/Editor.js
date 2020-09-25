@@ -22,9 +22,9 @@ export default function Editor(props) {
 				<button>O/C</button>
 			</div>
 			<ControlledEditor
+				className="code-mirror-wrapper"
 				onBeforeChange={handleChange}
 				value={value}
-				className="code-mirror-wrapper"
 				options={{
 					lineWrapping: true,
 					lint: true,
