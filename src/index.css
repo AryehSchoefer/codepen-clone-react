@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
@@ -22,6 +24,7 @@ body {
 }
 
 .editor-title {
+	font-family: 'Montserrat', sans-serif;
 	color: white;
 	background-color: hsl(225, 6%, 13%);
 	display: flex;
@@ -40,4 +43,21 @@ body {
 	border-bottom-right-radius: 0.5rem;
 	border-bottom-left-radius: 0.5rem;
 	overflow: hidden;
+}
+
+.collapsed {
+	flex-grow: 0;
+}
+
+.collapsed .CodeMirror-scroll {
+	position: absolute;
+	overflow: hidden !important;
+}
+
+.expand-collapse-btn {
+	margin-left: 0.5rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
 }
